@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Grid,Card,CardContent, Typography} from '@mui/material'
+import {Grid,Card,CardContent} from '@mui/material'
 import {} from '@emotion/styled'
 
 export const NavBar=()=>{

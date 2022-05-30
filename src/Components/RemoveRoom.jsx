@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Grid, TextField } from '@mui/material'
 
 
 export const RemoveRoom=()=>{
 
+    const rows=JSON.parse(localStorage.getItem("roomdata"));
+    const[rroom,setRroom]=useState('');
+    const[newdata,setNewData]=useState([...rows]);
+    
+
+    const handelRemove=()=>{
+        // const filtered=JSON.stringify(newdata.filter((item)=>item.roomno !==rroom))
+        const filtered=JSON.stringify(newdata.filter((item)=>item.roomno!==rroom));
+        console.log(filtered)
+      
+        setNewData([...filtered]);
+        
+    };
+     
     return(
         <div className="sub">
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
                 <Grid item/>
                 <Grid item xs={3}>
-                    <TextField variant="outlined" label='Room Number'/>
+                    <TextField variant="outlined" label='Room Number' onChange={e=>setRroom(e.target.value)} />
                 </Grid>
                 <Grid item>
-                    <Button variant="contained" color='error' >Delete Room</Button>
+                    <Button variant="contained" color='error' onClick={handelRemove}>Delete Room</Button>
                 </Grid>
             </Grid>
 
