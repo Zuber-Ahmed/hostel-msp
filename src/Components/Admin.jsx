@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import { BrowserRouter,Route,Routes,Router,Link } from "react-router-dom";
 
 export const Admin=()=>{
 
