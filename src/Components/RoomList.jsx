@@ -5,7 +5,8 @@ import { Button,Grid} from "@mui/material";
 
 
 export const RoomList=()=>{
-    const[ismanager,setIsManager]=useState(false);      
+    const[ismanager,setIsManager]=useState(true); 
+    const currentUser=sessionStorage.getItem("username");     
 
     const columns=[
         {field:'id',headerName:'ID',width:150,editable: true},
@@ -18,18 +19,11 @@ export const RoomList=()=>{
         {field:'roomno',headerName:'Room No',width:170,editable: true},
         {field:'roombed',headerName:'No.Beds',width:150,editable: true}
     ];
-    const rows=[
-        {id:1 , roomno:100,roomcap:10, roomsize:200,roombed:10},
-        {id:2 , roomno:101,roomcap:15, roomsize:250,roombed:15},
-        {id:3 , roomno:102,roomcap:20, roomsize:300,roombed:20},
-        {id:4 , roomno:103,roomcap:10, roomsize:200,roombed:10},
-        {id:5 , roomno:104,roomcap:20, roomsize:300,roombed:30},
-        {id:6 , roomno:104,roomcap:20, roomsize:300,roombed:30},
-    
-    ];
+    const rows=JSON.parse(localStorage.getItem("roomdata"))
 
     return(
         <div className="sub3">
+            <h2>Welcome Mr. {currentUser} to Room List</h2>
             <Grid container spacing={1}>
                 <Grid item xs={8}></Grid>
                 <Grid item xs={2}>
