@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand&display=swap");
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+*{
+    font-family: 'Quicksand',sans-serif;
+}
 .main{
     margin: 10px;
     padding: 10px;
@@ -7,7 +13,6 @@
     margin: 10px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
-
 }
 a{
     text-decoration: none;
@@ -19,3 +24,16 @@ a{
     color: white;
     text-align: center;
 }
+
+.imglogo{
+    width: 100%;
+}
+.sub3{
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    height:600px;
+    color: black;
+    font-weight: bolder;
+}
+

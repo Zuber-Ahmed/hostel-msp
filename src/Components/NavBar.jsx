@@ -1,33 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {Grid,Card,CardContent, Typography} from '@mui/material'
+import {} from '@emotion/styled'
 
 export const NavBar=()=>{
 
     return(
         <React.Fragment>
             <Grid container spacing={2}>
-                <Grid item xs={3}>
-                    <Grid item>
-                <Typography
-            variant="h5"
-            // noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 1,
-              flexGrow: 1,
-              fontFamily: 'sans-serif',
-              fontWeight: 900,
-              letterSpacing: '.2rem',
-              textDecoration: 'none',
-              textAlign:"center",
-              fontSize:30,
-              color:'midnightblue'
-            }}
-          >PICKUPBIZ HOSTEL 
-          </Typography>
-          </Grid>
+                <Grid item xs={2}>
+                        <Card>
+                        <img className="imglogo" 
+                        src='/Logo.png' 
+                        alt=""/>
+                </Card>
                 </Grid>
                 <Grid item xs={1}>
                     <Card>
