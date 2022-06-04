@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Button, Grid, TextField } from '@mui/material'
 
 
@@ -7,16 +7,18 @@ export const RemoveRoom=()=>{
     const rows=JSON.parse(localStorage.getItem("roomdata"));
     const[rroom,setRroom]=useState('');
     const[newdata,setNewData]=useState([...rows]);
+    const[copydata,setcopydata]=useState([])
     
-
+    
     const handelRemove=()=>{
         // const filtered=JSON.stringify(newdata.filter((item)=>item.roomno !==rroom))
         const filtered=JSON.stringify(newdata.filter((item)=>item.roomno!==rroom));
+        setNewData(filtered)
+        // localStorage.setItem("roomdata",filtered);
         console.log(filtered)
-      
-        setNewData([...filtered]);
         
     };
+
      
     return(
         <div className="sub">

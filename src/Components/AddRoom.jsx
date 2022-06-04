@@ -4,7 +4,7 @@ import {v4 as uuidv4} from 'uuid'
 
 export const AddRoom=()=>{
     const rows=JSON.parse(localStorage.getItem("roomdata"));
-    
+
     const [roomdata,setRoomData]=useState([...rows])
     const[roomno,setRoomNo]=useState(0)
     const[roomcap,setRoomCap]=useState(0)
@@ -13,7 +13,7 @@ export const AddRoom=()=>{
     
     const addRoomToStore=()=>{
         const obj={id:uuidv4(), roomno:roomno,roomcap:roomcap, roomsize:roomsize,roombed:roombed};
-        setRoomData([...roomdata,obj])
+         setRoomData([...roomdata,obj]) 
     };
     const handleSubmit=()=>{
         console.log(roomdata)

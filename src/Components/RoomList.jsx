@@ -4,7 +4,7 @@ import { Button,Grid} from "@mui/material";
 
 
 export const RoomList=()=>{
-    const[ismanager,setIsManager]=useState(true);  
+    const[ismanager,setIsManager]=useState(true); 
 
     const columns=[
         {field:'id',headerName:'ID',width:300,editable: true},
@@ -18,6 +18,7 @@ export const RoomList=()=>{
         {field:'roombed',headerName:'No.Beds',width:150,editable: true}
     ];
     const rows=JSON.parse(localStorage.getItem("roomdata"))
+    
     // const rows=[
     //     {id:1,roomno:1,roomcap:1,roomsize:1,roombed:1}
     // ]

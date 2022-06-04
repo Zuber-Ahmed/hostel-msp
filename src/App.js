@@ -10,6 +10,7 @@ import { NavBar } from './Components/NavBar';
 import { ManageRoom } from './Components/ManageRoom';
 import { RoomList } from './Components/RoomList';
 import { RemoveRoom } from './Components/RemoveRoom';
+import { Shopping } from './Components/Shopping';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/FrontDesk/ManageRoom' element={<ManageRoom/>}/>
         <Route path='/FrontDesk' element={<FrontDesk/>}/>
         <Route path='/Login' element={<Login/>}/>
+        <Route path='/eshop' element={<Shopping/>}/>
         <Route path='/' element={<Home/>}/>
       </Routes>
       </BrowserRouter>

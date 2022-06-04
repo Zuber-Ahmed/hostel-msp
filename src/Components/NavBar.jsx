@@ -15,7 +15,7 @@ export const NavBar=()=>{
                         alt=""/>
                 </Card>
                 </Grid>
-                <Grid item xs={1}>
+                <Grid item xs={2}>
                     <Card>
                         <CardContent>
                             <Link to={'/FrontDesk'}>Front Desk</Link>
@@ -33,6 +33,13 @@ export const NavBar=()=>{
                     <Card>
                         <CardContent>
                             <Link to={'/Login'}>Login</Link>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={2}>
+                    <Card>
+                        <CardContent>
+                            <Link to={'/eshop'}>e-Shopping</Link>
                         </CardContent>
                     </Card>
                 </Grid>
