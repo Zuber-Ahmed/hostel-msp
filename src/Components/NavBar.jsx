@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {Grid,Card,CardContent} from '@mui/material'
-import {} from '@emotion/styled'
+
 
 export const NavBar=()=>{
 
@@ -47,6 +47,13 @@ export const NavBar=()=>{
                     <Card>
                         <CardContent>
                             <Link to={'/Signup'}>Sign Up</Link>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={1}>
+                    <Card>
+                        <CardContent>
+                            <Link to={'/Chats'}>Chat App</Link>
                         </CardContent>
                     </Card>
                 </Grid>

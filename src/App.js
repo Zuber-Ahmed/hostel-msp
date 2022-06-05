@@ -11,6 +11,7 @@ import { ManageRoom } from './Components/ManageRoom';
 import { RoomList } from './Components/RoomList';
 import { RemoveRoom } from './Components/RemoveRoom';
 import { Shopping } from './Components/Shopping';
+import { Chat } from './Chats/Chat';
 
 function App() {
   return (
@@ -25,9 +26,12 @@ function App() {
         <Route path='/FrontDesk' element={<FrontDesk/>}/>
         <Route path='/Login' element={<Login/>}/>
         <Route path='/eshop' element={<Shopping/>}/>
+        <Route path='/Chats' element={<Chat/>}/>
         <Route path='/' element={<Home/>}/>
+
       </Routes>
       </BrowserRouter>
+
     </div>
   );
 }
