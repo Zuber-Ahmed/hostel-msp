@@ -12,6 +12,8 @@ import { RoomList } from './Components/RoomList';
 import { RemoveRoom } from './Components/RemoveRoom';
 import { Shopping } from './Components/Shopping';
 import { Chat } from './Chats/Chat';
+import { MyChats } from './Chats/MyChats';
+import { UserList } from './JSON/UserList';
 
 function App() {
   return (
@@ -27,8 +29,8 @@ function App() {
         <Route path='/Login' element={<Login/>}/>
         <Route path='/eshop' element={<Shopping/>}/>
         <Route path='/Chats' element={<Chat/>}/>
+        <Route path='/MyChats' element={<MyChats/>}/>
         <Route path='/' element={<Home/>}/>
-
       </Routes>
       </BrowserRouter>
 

@@ -32,8 +32,8 @@ export const Suraj = ({ setTxtSuraj, txtSuraj, txtChand, setIsSurajType }) => {
         </Grid>
         {txtChand.map((item) => {
           return (
-            <Grid item>
-              <SnackbarContent message={item} />
+            <Grid item >
+              <SnackbarContent style={{float:"left"}} message={item} />
             </Grid>
           );
         })}

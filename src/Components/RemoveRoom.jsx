@@ -12,8 +12,9 @@ export const RemoveRoom=()=>{
     
     const handelRemove=()=>{
         // const filtered=JSON.stringify(newdata.filter((item)=>item.roomno !==rroom))
-        const filtered=JSON.stringify(newdata.filter((item)=>item.roomno!==rroom));
-        setNewData(filtered)
+        const filtered=newdata.filter((item)=>item.roomno!==rroom);
+        // setNewData(filtered)
+        // JSON.stringify(localStorage.setItem("roomdata",filtered))
         // localStorage.setItem("roomdata",filtered);
         console.log(filtered)
         
@@ -25,7 +26,7 @@ export const RemoveRoom=()=>{
             <Grid container spacing={3}>
                 <Grid item/>
                 <Grid item xs={3}>
-                    <TextField variant="outlined" label='Room Number' onChange={e=>setRroom(e.target.value)} />
+                    <TextField variant="outlined" label='Room Number' onChange={(e)=>setRroom(e.target.value)} />
                 </Grid>
                 <Grid item>
                     <Button variant="contained" color='error' onClick={handelRemove}>Delete Room</Button>

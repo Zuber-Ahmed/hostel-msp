@@ -1,0 +1,28 @@
+th{
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+
+  }
+td{
+    padding: 5px;
+    width: 200px;
+    text-align:center;
+}
+table{
+    background-color: rgb(106, 194, 231);
+}
+.inputbox{
+    position: absolute;
+    top: 10rem;
+    width: 20rem;
+    height: 2rem;
+    right: 15rem;
+    
+}
+
+.btn{
+    margin-left: 10px;
+}

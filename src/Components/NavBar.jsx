@@ -57,6 +57,13 @@ export const NavBar=()=>{
                         </CardContent>
                     </Card>
                 </Grid>
+                <Grid item xs={1}>
+                    <Card>
+                        <CardContent>
+                            <Link to={'/MyChats'}>My Chats</Link>
+                        </CardContent>
+                    </Card>
+                </Grid>
             </Grid>
         </React.Fragment>
     )

@@ -1,0 +1,47 @@
+.main-container{
+
+    /* float: left; */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+.container-user1{
+    background-color:lightgreen;
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+.container-user2{
+    background-color:lightgreen;
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+h4{
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid black;
+}
+.inputbox{
+    position: relative;
+    top: 340px;
+    margin-left: 5px;
+}
+.btn1{
+    left:260px;
+    top: 300px;
+}
+.btn2{
+    top: 300px;
+    left: 260px;
+}
+.msg{    background-color: white;
+    color: black;
+    margin: 5px;
+}
+.wrapper1{
+    height: auto;
+    color: white;
+    background-color: black;
+
+}

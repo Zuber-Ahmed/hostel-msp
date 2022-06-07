@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TextField, Button, Grid, SnackbarContent } from "@mui/material";
 
-export const Chand = ({ setTxtChand, txtChand, txtSuraj, setIsChandType }) => {
+export const Chand = ({ setTxtChand, txtChand, txtSuraj, setIsChandType}) => {
   const [txt, setTxt] = useState([]);
 
   return (
@@ -31,8 +31,8 @@ export const Chand = ({ setTxtChand, txtChand, txtSuraj, setIsChandType }) => {
         </Grid>
         {txtSuraj.map((item) => {
           return (
-            <Grid item>
-              <SnackbarContent color="success" message={item} />
+            <Grid item >
+              <SnackbarContent style={{float:"right"}} color="success" message={item} />
             </Grid>
           );
         })}
