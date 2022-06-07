@@ -3,21 +3,21 @@ import {TextField,Button,Grid} from '@mui/material'
 import {v4 as uuidv4} from 'uuid'
 
 export const AddRoom=()=>{
-    const rows=JSON.parse(localStorage.getItem("roomdata"));
+    const rows=JSON.parse(localStorage.getItem("roomdata1"));
 
-    const [roomdata,setRoomData]=useState([...rows])
+    const[roomdata,setRoomData]=useState([...rows])
     const[roomno,setRoomNo]=useState(0)
     const[roomcap,setRoomCap]=useState(0)
     const[roomsize,setRoomSize]=useState(0)
     const[roombed,setRoomBeds]=useState(0)
     
     const addRoomToStore=()=>{
-        const obj={id:uuidv4(), roomno:roomno,roomcap:roomcap, roomsize:roomsize,roombed:roombed};
-         setRoomData([...roomdata,obj]) 
+        const obj={id:uuidv4(),roomno:roomno,roomcap:roomcap, roomsize:roomsize,roombed:roombed};
+         setRoomData([obj,...roomdata]) 
     };
     const handleSubmit=()=>{
+        localStorage.setItem("roomdata1",JSON.stringify(roomdata))
         console.log(roomdata)
-        localStorage.setItem("roomdata",JSON.stringify(roomdata))
     }
     return(
         <div className="sub">

@@ -17,10 +17,10 @@ export const RoomList=()=>{
         {field:'roomno',headerName:'Room No',width:170,editable: true},
         {field:'roombed',headerName:'No.Beds',width:150,editable: true}
     ];
-    const rows=JSON.parse(localStorage.getItem("roomdata"))
+    const rows=JSON.parse(localStorage.getItem("roomdata1"))
     
     // const rows=[
-    //     {id:1,roomno:1,roomcap:1,roomsize:1,roombed:1}
+    //     {id:"1",roomno:1,roomcap:1,roomsize:1,roombed:1}
     // ]
 
     return(
@@ -38,7 +38,7 @@ export const RoomList=()=>{
             <DataGrid
             rows={rows}
             columns={ismanager ? columns:columnsHK }
-            pageSize={5}
+            pageSize={10}
             checkboxSelection
             />
             
