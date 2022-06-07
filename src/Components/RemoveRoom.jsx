@@ -3,21 +3,21 @@ import { Button, Grid, TextField } from '@mui/material'
 
 
 export const RemoveRoom=()=>{
+    
+    const rows=JSON.parse(localStorage.getItem("roomdata2"));
 
-    const rows=JSON.parse(localStorage.getItem("roomdata"));
+
     const[rroom,setRroom]=useState('');
     const[newdata,setNewData]=useState([...rows]);
-    const[copydata,setcopydata]=useState([])
     
     
     const handelRemove=()=>{
-        // const filtered=JSON.stringify(newdata.filter((item)=>item.roomno !==rroom))
+        console.log("===>",newdata)
+        console.log("--->",rroom)
         const filtered=newdata.filter((item)=>item.roomno!==rroom);
-        // setNewData(filtered)
-        // JSON.stringify(localStorage.setItem("roomdata",filtered))
-        // localStorage.setItem("roomdata",filtered);
+        localStorage.setItem("roomdata2",JSON.stringify(filtered));
         console.log(filtered)
-        
+  
     };
 
      
